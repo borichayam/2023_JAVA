@@ -24,12 +24,10 @@ public class BookArrayList {
 			
 			if(tempId == bI) {
 				arrayL.remove(i);
-				
 				return true;
 			}
 		}
 		System.out.println(bI+"가 존재하지 않습니다.");
-		
 		return false;
 	}
 	
