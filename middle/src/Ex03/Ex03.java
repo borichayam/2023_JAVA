@@ -23,6 +23,8 @@ public class Ex03 extends JFrame {
 		setTitle("덕성여대 화이팅");
 		setSize(300, 200);
 		
+		bAL = new GradeBook();
+		
 		// 등록 패널
 		inputP = new JPanel(new GridLayout(3, 2));
 		inputP.add(new JLabel("이름"));

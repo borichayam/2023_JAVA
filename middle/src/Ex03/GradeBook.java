@@ -16,6 +16,11 @@ public class GradeBook {
 			arrayL = new ArrayList<Student>();
 		}
 		
+		// Student 데이터 추가
+		public void addStudent(Student s) {
+			arrayL.add(s);
+		}
+		
 		// 1. 학생들의 평균 점수를 계산하는 메소드
 		public double AverageGrade() {
 			double sum = 0;
@@ -47,10 +52,6 @@ public class GradeBook {
 		}
 		
 		/*
-		// Student 데이터 추가
-		public void addStudent(Student b) {
-			arrayL.add(b);
-		}
 		
 		// book 데이터 삭제
 		public boolean removeBook(int bI) {
