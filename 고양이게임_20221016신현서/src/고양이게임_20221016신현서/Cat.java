@@ -11,6 +11,7 @@ public class Cat extends GameObject {
     @Override
     public void update() {
         super.update();
+        
     }
 
     @Override

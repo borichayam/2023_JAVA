@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements KeyListener {
@@ -62,7 +61,6 @@ public class GamePanel extends JPanel implements KeyListener {
             public void keyReleased(KeyEvent e) {}
         });
 
-        addKeyListener(this);
         setFocusable(true);
     }
     
@@ -76,7 +74,7 @@ public class GamePanel extends JPanel implements KeyListener {
             g.setColor(Color.black);
             g.fillRect(0, 0, getWidth(), getHeight());
         } else {
-            // 게임 중일 때 배경 설정
+            // 게임 중, 클리어일 때 배경 설정
             // 하늘색
             g.setColor(new Color(135, 206, 235)); // RGB 값으로 하늘색 지정 (Sky Blue)
             g.fillRect(0, 0, getWidth(), 400);
